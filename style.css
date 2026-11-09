@@ -1,0 +1,27 @@
+:root {
+  --bg: #ffffff; --fg: #1c1e26; --muted: #5b6070; --line: #e3e5ee;
+  --accent: #4960e2; --card: #f6f7fb;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14151c; --fg: #ecedf3; --muted: #a3a8b8; --line: #2b2e3b; --accent: #8fa6f7; --card: #1c1e28; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+header.site { border-bottom: 1px solid var(--line); }
+header.site div { max-width: 44rem; margin: 0 auto; padding: 1rem; display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: baseline; }
+header.site a.brand { font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; }
+a { color: var(--accent); }
+h1 { font-size: 2rem; line-height: 1.2; margin: 1rem 0 0.5rem; }
+h2 { font-size: 1.25rem; margin: 2.25rem 0 0.5rem; }
+p.lead { font-size: 1.1rem; }
+p.muted, footer { color: var(--muted); font-size: 0.95rem; }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--line); }
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-top: 1.5rem; }
+.cards a { display: block; padding: 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); text-decoration: none; color: var(--fg); }
+.cards a strong { color: var(--accent); display: block; }
+footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; }
