@@ -13,7 +13,9 @@ body {
 main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
 header.site { border-bottom: 1px solid var(--line); }
 header.site div { max-width: 44rem; margin: 0 auto; padding: 1rem; display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: baseline; }
-header.site a.brand { font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; }
+header.site a.brand { font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; display: inline-flex; align-items: center; gap: 0.6rem; align-self: center; }
+header.site a.brand img { border-radius: 8px; display: block; }
+img.hero { border-radius: 28px; display: block; margin-top: 1rem; }
 a { color: var(--accent); }
 h1 { font-size: 2rem; line-height: 1.2; margin: 1rem 0 0.5rem; }
 h2 { font-size: 1.25rem; margin: 2.25rem 0 0.5rem; }
