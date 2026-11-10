@@ -27,3 +27,29 @@ th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.75rem 0.5rem 0
 .cards a { display: block; padding: 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); text-decoration: none; color: var(--fg); }
 .cards a strong { color: var(--accent); display: block; }
 footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; }
+
+/* Help pages */
+header.site div { max-width: 52rem; }
+main.help { max-width: 52rem; }
+nav.crumb { font-size: 0.95rem; color: var(--muted); margin-top: 0.5rem; }
+nav.crumb a { color: var(--muted); }
+ol, ul { padding-left: 1.4rem; }
+li { margin: 0.35rem 0; }
+figure { margin: 1.25rem 0; }
+figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 14px; display: block; }
+figure.phone img { max-width: 300px; }
+figure.tablet img { max-width: 100%; }
+figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+.pair { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+.pair figure { margin: 1rem 0; flex: 0 1 auto; }
+.pair figure.phone { flex: 0 1 260px; }
+.pair figure.phone img { max-width: 100%; }
+.note, .device { border-left: 4px solid var(--accent); background: var(--card); padding: 0.6rem 1rem; border-radius: 0 10px 10px 0; margin: 1rem 0; }
+.device strong:first-child { color: var(--accent); }
+.steps-next { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.toc { counter-reset: t; list-style: none; padding: 0; }
+.toc li { counter-increment: t; border: 1px solid var(--line); border-radius: 12px; background: var(--card); margin: 0.6rem 0; }
+.toc a { display: block; padding: 0.8rem 1rem 0.8rem 3rem; text-decoration: none; color: var(--fg); position: relative; }
+.toc a::before { content: counter(t); position: absolute; left: 1rem; color: var(--accent); font-weight: 700; }
+.toc a strong { color: var(--accent); display: block; }
+kbd { font: inherit; border: 1px solid var(--line); border-radius: 5px; padding: 0 0.3rem; background: var(--card); }
